@@ -1,39 +1,36 @@
 .page-main__title {
-    color: #ffffff;
-    text-align: center;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: normal;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
 }
 
 .page-main__index {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: -15px;
-    min-height: 462px;
-    background-color: #283645;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 462px;
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
 .page-main__image {
-    display: flex;
+  display: flex;
 }
 
 .page-main__photo {
-    display: flex;
-    justify-content: center;
-    margin-top: -15px;
-    min-height: 237px;
-    background-color: #283645;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+  display: flex;
+  justify-content: center;
+  min-height: 237px;
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
 .page-main__contest {
-    display: flex;
-    justify-content: center;
-    margin-top: -15px;
-    min-height: 237px;
-    background-color: #283645;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+  display: flex;
+  justify-content: center;
+  min-height: 237px;
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
