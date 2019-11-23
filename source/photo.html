@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,17 +18,17 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="index.html">Главная</a>
+                    <li>
+                        <a class="site-list__item" href="index.html">Главная</a>
                     </li>
-                    <li class="site-list__item">
-                        <a>Фотографии</a>
+                    <li>
+                        <a class="site-list__item">Фотографии</a>
                     </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Конкурс</a>
+                    <li>
+                        <a class="site-list__item" href="form.html">Конкурс</a>
                     </li>
-                    <li class="site-list__item">
-                        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                    <li>
+                        <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                     </li>
 
                 </ul>
@@ -36,12 +37,13 @@
     </header>
 
     <main class="page-main">
-        <h1 class="page-main__title">Фотографии пользователей</h1>
-        <section class="add-photos">
-            <h2 class="visually-hidden">Добавь фото</h2>
-            <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </section>
+        <div class="page-main__photo">
+            <h1 class="page-main__title">Фотографии пользователей</h1>
+        </div>
         <section class="users-photos">
+            <h2 class="visually-hidden">Добавь фото</h2>
+            <p class="users-photos__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+            </p>
             <h2 class="visually-hidden">Фотографии</h2>
             <ul class="users-photos__list">
                 <li class="users-photos__item">
