@@ -36,7 +36,7 @@
 
   .site-list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .main-nav__wrapper {
@@ -51,10 +51,6 @@
   .main-nav {
     display: flex;
     flex-grow: 1;
-    justify-content: space-around;
-  }
-
-  .site-list {
     justify-content: space-around;
   }
 }
