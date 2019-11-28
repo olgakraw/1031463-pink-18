@@ -58,3 +58,41 @@
   text-transform: uppercase;
   color: #d22856;
 }
+
+.users-photos__item-image-tablet {
+  display: none;
+}
+
+.users-photos__item-image-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .users-photos__intro {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .users-photos__item-image-mobile {
+    display: none;
+  }
+
+  .users-photos__item-image-tablet {
+    display: block;
+  }
+
+  .users-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-photos__item-image-tablet {
+    display: none;
+  }
+
+  .users-photos__item-image-desktop {
+    display: block;
+  }
+}
