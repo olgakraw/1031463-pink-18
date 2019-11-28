@@ -1,7 +1,6 @@
 .page-header {
   background-color: #283645;
   color: #ffffff;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,16 +8,12 @@
   margin: 0;
 }
 
-
-
-
 @media (min-width: $tablet-width) {}
 
 @media (min-width: $desktop-width) {
   .page-header {
     flex-direction: row;
     justify-content: space-around;
-
   }
 
   .main-nav__toggle {
@@ -29,6 +24,4 @@
   .page-header__logo-wrapper {
     min-width: 320px;
   }
-
-
 }

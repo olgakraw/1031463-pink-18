@@ -43,7 +43,6 @@
   display: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .advantages__img-mobile {
     display: none;
@@ -66,10 +65,10 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .advantages__list {
     flex-direction: row;
+    text-align: center;
   }
 
   .advantages__item {
@@ -91,10 +90,6 @@
 
   .advantages__img-tablet {
     display: none;
-  }
-
-  .advantages__list {
-    text-align: center;
   }
 
   .advantages__title {

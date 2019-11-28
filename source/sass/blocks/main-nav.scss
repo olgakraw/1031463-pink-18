@@ -6,7 +6,6 @@
   margin: 0;
   padding-left: 0;
   text-align: center;
-
   flex-grow: 1;
 }
 
@@ -26,8 +25,6 @@
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
-
-
 @media (min-width: $tablet-width) {}
 
 @media (min-width: $desktop-width) {
@@ -40,9 +37,6 @@
   .site-list {
     flex-direction: row;
     justify-content: space-between;
-
-
-
   }
 
   .main-nav__wrapper {
@@ -52,14 +46,12 @@
     min-width: 1200px;
     width: 100%;
     justify-content: flex-start;
-
   }
 
   .main-nav {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-
   }
 
   .site-list {
