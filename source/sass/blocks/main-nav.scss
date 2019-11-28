@@ -25,8 +25,6 @@
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
-@media (min-width: $tablet-width) {}
-
 @media (min-width: $desktop-width) {
   .site-list__item {
     text-transform: none;
