@@ -39,7 +39,7 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__photo">
+    <div class="page-main__background page-main__photo">
       <h1 class="page-main__title">Фотографии пользователей</h1>
     </div>
     <section class="users-photos">
@@ -53,17 +53,21 @@
         <b>Панорама дня</b>
 
         <p class="users-photos__item-picture">
-          <img class="users-photos__item-image users-photos__item-image-mobile" src="img/panorama-mobile@1x.jpg"
-            width="320" height="137" alt="Фото Анны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="users-photos__item-image" src="img/panorama-mobile@1x.jpg" width="320" height="137"
+              alt="Фото Анны">
+          </picture>
         </p>
-        <p class="users-photos__item-picture">
+        <!--<p class="users-photos__item-picture">
           <img class="users-photos__item-image users-photos__item-image-tablet" src="img/panorama-tablet@1x.jpg"
             width="660" height="509" alt="Фото Анны">
         </p>
         <p class="users-photos__item-picture">
           <img class="users-photos__item-image users-photos__item-image-desktop" src="img/panorama-desktop@1x.jpg"
             width="1200" height="506" alt="Фото Анны">
-        </p>
+        </p>!-->
         <cite class="users-photos__author-name">Анна</cite>
         <p class="users-photos__post-time">(5 минут назад)</p>
         <p class="users-photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
@@ -76,9 +80,13 @@
         <li class="users-photos__item">
 
           <p class="users-photos__item-picture">
-            <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-car-mobile@1x.jpg"
-              width="280" height="180" alt="Фото Левона">
-          </p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-car-mobile@1x.jpg"
+                width="280" height="180" alt="Фото Левона">
+            </picture>
+            <!--</p>
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-tablet" src="img/photo-car-tablet@1x.jpg"
               width="300" height="300" alt="Фото Левона">
@@ -86,27 +94,31 @@
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-desktop" src="img/photo-car-desktop@1x.jpg"
               width="300" height="400" alt="Фото Левона">
-          </p>
-          <cite class="users-photos__author-name">Левон</cite>
-          <p class="users-photos__post-time">(5 часов назад)</p>
-          <p class="users-photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a href="#"><img src="https://via.placeholder.com/150x150" width="13" height="12" alt="Like!"></a>
-          <p class="users-photos__likes">Нравится:356</p>
+          </p>!-->
+            <cite class="users-photos__author-name">Левон</cite>
+            <p class="users-photos__post-time">(5 часов назад)</p>
+            <p class="users-photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a href="#"><img src="https://via.placeholder.com/150x150" width="13" height="12" alt="Like!"></a>
+            <p class="users-photos__likes">Нравится:356</p>
         </li>
         <li class="users-photos__item">
 
           <p class="users-photos__item-picture">
-            <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-drumset-mobile@1x.jpg"
-              width="280" height="180" alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="users-photos__item-image users-photos__item-image-mobile"
+                src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
+            </picture>
           </p>
-          <p class="users-photos__item-picture">
+          <!--<p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-tablet" src="img/photo-drumset-tablet@1x.jpg"
               width="300" height="300" alt="Фото Левона">
           </p>
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-desktop"
               src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="Фото Левона">
-          </p>
+          </p>!-->
           <cite class="users-photos__author-name">Антон</cite>
           <p class="users-photos__post-time">(12 часов назад)</p>
           <p class="users-photos__text">Соседи будут рады!</p>
@@ -116,17 +128,21 @@
         <li class="users-photos__item">
 
           <p class="users-photos__item-picture">
-            <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-window-mobile@1x.jpg"
-              width="280" height="180" alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-window-mobile@1x.jpg"
+                width="280" height="180" alt="Фото Бориса>">
+            </picture>
           </p>
-          <p class="users-photos__item-picture">
+          <!--<p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-tablet" src="img/photo-window-tablet@1x.jpg"
               width="300" height="300" alt="Фото Левона">
           </p>
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-desktop" src="img/photo-window-desktop@1x.jpg"
               width="300" height="400" alt="Фото Левона">
-          </p>
+          </p>!-->
           <cite class="users-photos__author-name">Борис</cite>
           <p class="users-photos__post-time">(20 часов назад)</p>
           <p class="users-photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -136,17 +152,21 @@
         <li class="users-photos__item">
 
           <p class="users-photos__item-picture">
-            <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-fair-mobile@1x.jpg"
-              width="280" height="180" alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-fair-mobile@1x.jpg"
+                width="280" height="180" alt="Фото Сергея">
+            </picture>
           </p>
-          <p class="users-photos__item-picture">
+          <!--<p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-tablet" src="img/photo-fair-tablet@1x.jpg"
               width="300" height="300" alt="Фото Левона">
           </p>
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-desktop" src="img/photo-fair-desktop@1x.jpg"
               width="300" height="400" alt="Фото Левона">
-          </p>
+          </p>!-->
           <cite class="users-photos__author-name">Сергей</cite>
           <p class="users-photos__post-time">(25 часов назад)</p>
           <p class="users-photos__text">Самая кубанская в мире!</p>
@@ -156,17 +176,21 @@
         <li class="users-photos__item">
 
           <p class="users-photos__item-picture">
-            <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-pov-mobile@1x.jpg"
-              width="280" height="180" alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-pov-mobile@1x.jpg"
+                width="280" height="180" alt="Фото Максима">
+            </picture>
           </p>
-          <p class="users-photos__item-picture">
+          <!--<p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-tablet" src="img/photo-pov-tablet@1x.jpg"
               width="300" height="300" alt="Фото Левона">
           </p>
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-desktop" src="img/photo-pov-desktop@1x.jpg"
               width="300" height="400" alt="Фото Левона">
-          </p>
+          </p>!-->
           <cite class="users-photos__author-name">Максим</cite>
           <p class="users-photos__post-time">(40 часов назад)</p>
           <p class="users-photos__text">Где снег-то?</p>
@@ -176,17 +200,21 @@
         <li class="users-photos__item">
 
           <p class="users-photos__item-picture">
-            <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-wing-mobile@1x.jpg"
-              width="280" height="180" alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="users-photos__item-image users-photos__item-image-mobile" src="img/photo-wing-mobile@1x.jpg"
+                width="280" height="180" alt="Фото Надежда">
+            </picture>
           </p>
-          <p class="users-photos__item-picture">
+          <!--<p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-tablet" src="img/photo-wing-tablet@1x.jpg"
               width="300" height="300" alt="Фото Левона">
           </p>
           <p class="users-photos__item-picture">
             <img class="users-photos__item-image users-photos__item-image-desktop" src="img/photo-wing-desktop@1x.jpg"
               width="300" height="400" alt="Фото Левона">
-          </p>
+          </p>!-->
           <cite class="users-photos__author-name">Надежда</cite>
           <p class="users-photos__post-time">(45 часов назад)</p>
           <p class="users-photos__text">Всем GM и взаимные лайки!</p>

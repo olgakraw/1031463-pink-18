@@ -7,31 +7,16 @@
 }
 
 .page-main__index {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 462px;
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .page-main__image {
   display: flex;
 }
 
-.page-main__photo {
-  display: flex;
-  justify-content: center;
-  min-height: 237px;
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.page-main__contest {
+.page-main__background {
   display: flex;
   justify-content: center;
   min-height: 237px;

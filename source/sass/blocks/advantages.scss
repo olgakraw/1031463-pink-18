@@ -56,12 +56,25 @@
     display: block;
   }
 
+  /*.advantages__tablet-wrapper {
+    display: flex;
+  }*/
+
+  .advantages__list {
+    text-align: left;
+  }
+
   .advantages__tablet-wrapper {
     display: flex;
   }
 
-  .advantages__list {
-    text-align: left;
+  .advantages__img {
+    order: -1;
+    margin-top: -230px;
+  }
+
+  .advantages__text-wrapper {
+    padding-left: 160px;
   }
 }
 
@@ -78,6 +91,7 @@
 
   .advantages__img {
     order: -1;
+    margin-top: 0;
   }
 
   .advantages__img-desktop {
@@ -99,5 +113,9 @@
   .advantages__description {
     font-size: 18px;
     line-height: 1.67;
+  }
+
+  .advantages__text-wrapper {
+    padding-left: 0px;
   }
 }
