@@ -7,30 +7,61 @@
 }
 
 .page-main__index {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 462px;
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
 .page-main__image {
   display: flex;
 }
 
-.page-main__photo {
+.page-main__background {
   display: flex;
   justify-content: center;
   min-height: 237px;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.page-main__contest {
-  display: flex;
-  justify-content: center;
-  min-height: 237px;
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+@media (min-width: $tablet-width) {
+  .page-main__index {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-main__photo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-main__contest {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-main__title {
+    font-size: 50px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__index {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    /*flex-direction: row;
+    justify-content: space-around;*/
+  }
+
+  .page-main__photo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-main__contest {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-main__title {
+    font-size: 50px;
+    font-weight: 300;
+  }
 }

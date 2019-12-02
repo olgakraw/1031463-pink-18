@@ -19,3 +19,14 @@
   line-height: 1.71;
   text-align: center;
 }
+
+@media (min-width: $desktop-width) {
+  .app-download__description {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  /*.app-download {
+    background-color: transparent;
+  }*/
+}
