@@ -28,7 +28,7 @@
   background-size: 100%;
   //background-position: 0 -70px;
   //box-shadow: inset 0 0 0 10px rgb(30, 5, 252);
-  margin-top: -70px;
+  //margin-top: -70px;//
 }
 
 @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
     background-size: cover;
     flex-direction: row;
     //box-shadow: inset 0 0 0 10px rgb(231, 231, 235);
-    margin-top: -120px;
+    //margin-top: -120px;//
     padding-top: 120px;
     min-height: 729px;
   }
@@ -62,7 +62,7 @@
   .page-main__title {
     font-size: 50px;
     font-weight: 300;
-    position: relative;
+    //position: relative;
   }
 }
 
@@ -88,7 +88,7 @@
     padding-right: 150px;
   }
 
-  .page-main__title--wrapper {
+  .page-main__title-wrapper {
     width: 50%;
   }
 }
