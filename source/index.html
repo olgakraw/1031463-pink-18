@@ -71,30 +71,34 @@
         <div class="page-main__title-wrapper">
           <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
         </div>
-        <div class="app">
-          <a class="app-download__button" href="#">Скачать приложение</a>
+        <div class="app-download__information">
+          <div class="app">
+            <a class="app-download__button" href="#">Скачать приложение</a>
+          </div>
+          <ul class="app-download__os">
+            <li class="app-download__os-ios">
+              <img class="app-download__os-ios-image" src="img/logo-apple.svg" width="47" height="56" alt="iOS">
+            </li>
+            <li class="app-download__os-android">
+              <img class="app-download__os-android-image" src="img/logo-android.svg" width="43" height="47"
+                alt="Android">
+            </li>
+            <li class="app-download__os-windows">
+              <img class="app-download__os-windows-image" src="img/logo-microsoft.svg" width="44" height="41"
+                alt="Windows">
+            </li>
+          </ul>
+          <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <ul class="app-download__os">
-          <li class="app-download__os-ios">
-            <img class="app-download__os-ios-image" src="img/logo-apple.svg" width="47" height="56" alt="iOS">
-          </li>
-          <li class="app-download__os-android">
-            <img class="app-download__os-android-image" src="img/logo-android.svg" width="43" height="47" alt="Android">
-          </li>
-          <li class="app-download__os-windows">
-            <img class="app-download__os-windows-image" src="img/logo-microsoft.svg" width="44" height="41"
-              alt="Windows">
-          </li>
-        </ul>
-        <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <div class="page-main__image">
+
+      <!--<div class="page-main__image">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
           <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
           <img src="img/iphone-5-in-hand-png.png" width="320" height="314" alt="iphone-hand-mobile">
         </picture>
-      </div>
+      </div>-->
     </section>
 
     <section class="advantages">
@@ -108,34 +112,30 @@
 
       <ul class="advantages__list">
         <li class="advantages__item">
+          <p class="advantages__img advantages__img-desktop">
+            <img class="advantages__iphone-smiles" src="img/iphone-screen-1-desktop@1x.png" width="186" height="382"
+              alt="iphone-black-and-white">
+          </p>
           <div class="advantages__text-wrapper">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </div>
-          <p class="advantages__img advantages__img-desktop">
-            <img class="advantages__iphone-smiles" src="img/iphone-screen-1-desktop@1x.png" width="186" height="382"
-              alt="iphone-black-and-white">
-          </p>
+
         </li>
         <li class="advantages__item">
+          <p class="advantages__img advantages__img-desktop">
+            <img class="advantages__iphone-smiles" src="img/iphone-screen-2-desktop@1x.png" width="186" height="382"
+              alt="iphone-pink">
+          </p>
           <div class="advantages__text-wrapper">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
           </div>
-          <p class="advantages__img advantages__img-desktop">
-            <img class="advantages__iphone-smiles" src="img/iphone-screen-2-desktop@1x.png" width="186" height="382"
-              alt="iphone-pink">
-          </p>
+
         </li>
         <li class="advantages__item advantages__tablet-wrapper">
-          <div class="advantages__text-image-wrapper">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых
-            </p>
-          </div>
           <p class="advantages__img">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
@@ -145,12 +145,19 @@
             </picture>
             <!--<p class="advantages__img advantages__img-tablet">
 
-                  <img class="advantages__iphone-smiles" src="img/iphone-screen-3-tablet@1x.png" width="268" height="547"
-                    alt="iphone-smiles">
+                      <img class="advantages__iphone-smiles" src="img/iphone-screen-3-tablet@1x.png" width="268" height="547"
+                        alt="iphone-smiles">
 
-                </p>!-->
+                    </p>!-->
 
           </p>
+          <div class="advantages__text-image-wrapper">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых
+            </p>
+          </div>
+
           <!--<p class="advantages__img advantages__img-desktop">
               <img class="advantages__iphone-smiles" src="img/iphone-screen-3-desktop@1x.png" width="186" height="382"
                 alt="iphone smiles">
@@ -203,7 +210,7 @@
 
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span>
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px"
               viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path
@@ -214,7 +221,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span>
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
               viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path
@@ -229,7 +236,7 @@
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
           Academy</span>
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <svg version="1.0" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
           enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path

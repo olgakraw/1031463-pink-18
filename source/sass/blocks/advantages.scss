@@ -55,6 +55,15 @@
   display: none;
 }
 
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__text-image-wrapper {
+  order: -1;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__img-mobile {
     display: none;
@@ -67,10 +76,6 @@
   .advantages__img-tablet {
     display: block;
   }
-
-  /*.advantages__tablet-wrapper {
-    display: flex;
-  }*/
 
   .advantages__intro {
     font-size: 40px;
@@ -95,8 +100,8 @@
   }
 
   .advantages__img {
-    order: -1;
-    //margin-top: -300px;//
+    //order: 0;
+    margin-top: -300px;//
     padding-left: 20px;
     //width: 150%;
   }
@@ -107,6 +112,7 @@
 
   .advantages__text-image-wrapper {
     padding-left: 45px;
+    order: 0;
   }
 
   .advantages__iphone-smiles {
@@ -116,6 +122,11 @@
 
   .advantages__description {
     padding-left: 0;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -134,7 +145,7 @@
   }
 
   .advantages__img {
-    order: -1;
+    //order: -1;
     margin-top: 0;
   }
 
