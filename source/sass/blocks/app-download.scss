@@ -1,16 +1,54 @@
 .app-download {
+  //background-image: url("../img/iphone-5-in-hand-png.png");
+  //background-repeat: no-repeat;
+  //background-size: 100%;
+  //background-color: transparent;
+  //background-position: 95% 43%;
+}
+
+.app-download__information {
   background-color: #283645;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 271px;
+  //box-shadow: inset 0 0 0 4px rgb(34, 252, 5);
 }
 
 .app-download__button {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
+  border: solid 3px #ffffff;
+  border-radius: 30px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 28px;
 }
+
+.app-download__button:hover {
+  color: #d22856;
+  background: #ffffff;
+}
+
+.app-download__button:active {
+  color: rgba(210, 40, 86, 0.3);
+  background: #ffffff;
+}
+
 
 .app-download__os {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 0;
+  padding-left: 37px;
+  padding-right: 37px;
+  //box-shadow: inset 0 0 0 4px rgb(21, 5, 252);
 }
 
 .app-download__description {
@@ -18,15 +56,64 @@
   font-weight: 300;
   line-height: 1.71;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  //box-shadow: inset 0 0 0 4px rgb(97, 4, 77);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .app-download {
+    //position: absolute;
+    //top: 72%;
+    width: 50%;
+    background-color: transparent;
+    //background-image: url("../img/iphone-hand-tablet@1x.png");
+    //background-position: 50% 50%;
+    //background-size: contain;
+    //box-shadow: inset 0 0 0 4px rgb(97, 4, 77);
+  }
+
+  .app-download__information {
+    background-color: transparent;
+  }
+
+  .app-download__description {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .app-download__description {
     font-size: 18px;
     line-height: 1.33;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 40px;
   }
 
-  /*.app-download {
-    background-color: transparent;
-  }*/
+  .app-download {
+    //top: 47%;
+    //left: 8%;
+    width: 30%;
+    margin-left: 130px;
+    //background-image: url("../img/iphone-hand-desktop@1x.png");
+    //background-position: 50% 50%;
+  }
+
+  .app-download__os {
+    margin-top: 70px;
+  }
+
+  .app-download__button {
+    font-size: 21px;
+  }
 }

@@ -9,6 +9,8 @@
 
   .effect__text {
     order: 1;
+    width: 50%;
+    //margin-left: -20px;//
   }
 
   .effect-title {
@@ -16,6 +18,9 @@
     font-weight: 700;
     line-height: 1.2;
     color: #000000;
+    padding-right: 167.3px;
+    //padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .effect__description {
@@ -24,6 +29,7 @@
     line-height: 1.71;
     text-align: left;
     color: #283645;
+    padding-right: 50px;
   }
 
   .effect__link {
@@ -32,16 +38,29 @@
     line-height: 1.71;
     text-align: left;
     color: #d22856;
+    text-decoration: underline;
+  }
+
+  .effect__img {
+    width: 50%;
+    padding-left: 20px;
+    //margin-top: -15px;//
   }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
     display: flex;
+    padding-top: 70px;
   }
 
   .effect__text {
     order: 1;
+    width: 60%;
+    padding-top: 50px;
+    padding-right: 140px;
+    //padding-left: 20px;
+    //margin-left: -120px;//
   }
 
   .effect-title {
@@ -64,5 +83,14 @@
     line-height: 1.67;
     text-align: left;
     color: #d22856;
+  }
+
+  .effect__image {
+    min-width: 298px;
+    min-height: 345px;
+  }
+
+  .effect__img {
+    padding-left: 130px;
   }
 }
