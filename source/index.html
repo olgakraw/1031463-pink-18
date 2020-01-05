@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!--<meta name="format-detection" content="telephone=no">!-->
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="picturefill.js" async></script>
 </head>
 
 <body>
@@ -178,6 +183,135 @@
       <p class="effect__img effect__tablet">
         <img class="effect__image" src="img/icon-timer.svg" width="238" height="276" alt="timer">
       </p>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Мнения о приложении</h2>
+      <div class="feedback__slider">
+        <p class="feedback__author">Николай Петров</p>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+
+      <div class="feedback__toggle">
+        <input type="radio" class="radio" id="radio1" name="feedback-slider" checked>
+        <label for="radio1"></label>
+        <input type="radio" class="radio" name="feedback-slider" id="radio2">
+        <label for="radio2"></label>
+        <input type="radio" class="radio" name="feedback-slider" id="radio3">
+        <label for="radio3"></label>
+      </div>
+    </section>
+
+    <section class="tariffs">
+      <div class="tariffs__wrapper">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <div class="tariffs__item tariffs__base">
+        <div class="tariffs__caption">
+        <p class="tariffs__name tariffs__base-name">
+          База
+        </p>
+        <p class="tariffs__cost tariffs__base-cost">
+          1,99 USD
+        </p>
+        </div>
+        <ul class="tariffs__base-options tariffs__options">
+          <li class="tariffs__options-item">Розовый фильтр</li>
+          <li class="tariffs__options-item">Смайлики</li>
+          <li class="tariffs__options-item">Комментарии</li>
+        </ul>
+      </div>
+
+      <div class="tariffs__item tariffs__standard">
+        <div class="tariffs__caption">
+        <p class="tariffs__name tariffs__standard-name">
+          Стандарт
+        </p>
+        <p class="tariffs__cost tariffs__standard-cost">
+          3,99 USD
+        </p>
+      </div>
+        <ul class="tariffs__standard-options tariffs__options">
+          <li class="tariffs__options-item">Розовый фильтр</li>
+          <li class="tariffs__options-item">Смайлики</li>
+          <li class="tariffs__options-item">Комментарии</li>
+        </ul>
+      </div>
+
+      <div class="tariffs__item tariffs__unlim">
+        <div class="tariffs__caption">
+        <p class="tariffs__name tariffs__unlim-name">
+          Анлим
+        </p>
+        <p class="tariffs__cost tariffs__unlim-cost">
+          9,99 USD
+        </p>
+      </div>
+        <ul class="tariffs__unlim-options tariffs__options">
+          <li class="tariffs__options-item">Розовый фильтр</li>
+          <li class="tariffs__options-item">Смайлики</li>
+          <li class="tariffs__options-item">Комментарии</li>
+        </ul>
+      </div>
+    </div>
+      <div class="tariffs__toggle">
+        <input type="radio" class="radio" id="radio1" name="tariff-slider" checked>
+        <label for="radio1"></label>
+        <input type="radio" class="radio" name="tariff-slider" id="radio2">
+        <label for="radio2"></label>
+        <input type="radio" class="radio" name="tariff-slider" id="radio3">
+        <label for="radio3"></label>
+      </div>
+
+    </section>
+
+
+
+
+    <section class="contacts">
+
+      <h2 class="visually-hidden">
+        Контакты HTML Academy
+      </h2>
+      <p class="contacts__introduction">
+        Остались вопросы? Свяжитесь с нами!
+      </p>
+
+      <p class="contacts__text contacts__text-phone">
+        Звоните:
+      </p>
+      <p class="contacts__value contacts__value-phone">
+        +7 (812) 555-66-66
+      </p>
+
+      <p class="contacts__text contacts__text-email">
+        Пишите:
+      </p>
+      <div class="contacts__value contacts__value-email">
+        <a class="contacts__email" href="#">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+      <p class="contacts__text contacts__text-address">
+        Приезжайте в гости:
+      </p>
+      <p class="contacts__value contacts__value-address">
+        ул. Большая Конюшенная, 19/8
+      </p>
+
+
+
+
+      <iframe class="contacts__google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.590183238402!2d30.32223200698719!3d59.9389422039375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1576940504747!5m2!1sru!2sru"
+        width="320" height="594" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x" srcset="img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x" srcset="img/bg-map-tablet@2x.jpg 2x">
+        <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645"
+          alt="HTML Academy на карте, ул. Большая конюшенная, 19/8">
+      </picture>
+
     </section>
   </main>
   <footer class="page-footer page-footer__index">
